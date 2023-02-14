@@ -1,0 +1,27 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../../assets/img/login.jpg") no-repeat;
+  background-size: 100% 100%;
+  .content {
+    width: 500px;
+    height: 300px;
+    /* background-color: antiquewhite; */
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px #e5e5e5, -1px -1px 1px 1px #e5e5e5;
+    :global {
+      .ant-form {
+        margin-top: 100px;
+      }
+      .ant-input {
+        border-radius: 5px;
+      }
+      .ant-btn {
+        margin-left: 210px;
+      }
+    }
+  }
+}

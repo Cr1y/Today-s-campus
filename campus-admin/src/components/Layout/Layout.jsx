@@ -9,7 +9,6 @@ import S from "./Layout.module.scss";
 Vue.component("d-Header", Header);
 Vue.component("d-Sider", Sider);
 Vue.component("d-Footer", Footer);
-// Vue.component("d-Content", Content);
 Vue.use(Layout);
 
 @Component({
