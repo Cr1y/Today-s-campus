@@ -7,7 +7,19 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: "/layout",
-    name:"首页",
+    name: "首页",
+    component: Layout,
+    children: [
+      {
+        path: "/signIn",
+        name: "签到",
+        component: () => import("../views/SignIn/index")
+      }
+    ]
+  },
+  {
+    path: "admin",
+    name: "admin",
     component: Layout,
     children: [
       {
